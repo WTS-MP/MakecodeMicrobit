@@ -82,7 +82,7 @@ input.onButtonPressed(Button.A, function () {
 ```
 
 ## {More Control}
-► First, make sure the servo returns to 0 each time. 
+► First, make sure the servo returns to 0 each time.. 
 
 ► Add a ``||basic:On Start||`` block. Insert a ``||pins: Servo Write Pin [P0] to [0]||`` 
 
