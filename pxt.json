@@ -22,7 +22,8 @@
         "tutorials/grove-rotary.md",
         "tutorials/grove-servo.md",
         "_locales/en-AU/tutorials/test.md",
-        "tutorials/test-servo.md"
+        "tutorials/test-servo.md",
+        "tutorials/grove-servom.md"
     ],
     "testFiles": [
         "test.ts"
