@@ -126,5 +126,4 @@ Grove=github:seeed-studio/pxt-grove
 
 ```validation.global
 # BlocksExistValidator
-* markers: validate-exists
 ```
