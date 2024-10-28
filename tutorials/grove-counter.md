@@ -1,13 +1,3 @@
-<!--
-Written by: casey 
-
-Last updated: 16/08
-
-Ready for Upload: YES
-
-
--->
-
 ### @diffs true
 
 # 4-Digit Display with Microbit
@@ -49,17 +39,17 @@ For this tutorial you will need;
 ![Parts Needed: 1 4-digitDisplay, 1 microbit, 1 sheild](https://raw.githubusercontent.com/CarlTS/grove-sensor-tutorial/master/images/GroveSensors/4DigitDisplay.png)
 
 ## Connecting Everything @fullscreen @unplugged 
-1. Plug the Microbit ** ( 3 ) ** into the Shield ** ( 2 ) **
-2. Plug the 4-Digit Display ** ( 1 ) ** into the P0/P14 pin
+1. Plug the Microbit (3) into the Shield (2)
+2. Plug the 4Digit Display (1) into the P0 pin
 ![Connection Image](https://raw.githubusercontent.com/CarlTS/grove-sensor-tutorial/master/images/4digitdisplaysetup.jpg)
 
-## Time to Code! @unplugged
+## Time to Code ! @unplugged
 
-First, we want to program the 4-Digit Display to show an ** initial value**! 
+First, we need to program the 4-Digit Display to show an initial value! 
 
 ```blocks
 let _4Digit: grove.TM1637 = null
-_4Digit = grove.createDisplay(DigitalPin.P0, DigitalPin.P14)
+_4Digit = grove.createDisplay(DigitalPin.P1, DigitalPin.P15)
 _4Digit.show(0)
 ```
 ```validation.local
@@ -67,7 +57,7 @@ _4Digit.show(0)
 * Enabled: false
 ```
 
-## Setup the 4-Digit Display
+## Setup the display
 Place a ``||grove:Set 4Digit to Display||`` block inside a ``||basic:On Start||``. Set the pins to ``||grove:P0||`` and ``||grove:P14||``
 
 ```blocks
@@ -76,10 +66,10 @@ let _4Digit = grove.createDisplay(DigitalPin.P0, DigitalPin.P14)
 
 ```
 
-## Showing an Initial Value
-Now insert a ``||grove:4Digit show number||`` after the ``||grove:Set 4Digit to Display||``. 
+## Program the Initial Setup
+Now insert a ``||grove:4Digit show number||`` after the ``||grove:Set 4Digit to Display||``. This will show a 0 on the display.
 
-This means the display will initially show "0". Remember to ``|Download|``
+Remember to click ``|Download|`` !
 
 ```blocks
 let _4Digit: grove.TM1637 = null
@@ -107,8 +97,9 @@ This prepares the display for a random number generator in the next step
 
 
 ## Display Random Numbers
-Replace the "0" in the new``||grove:4Digit show number||`` with the ``||math: pick random '0' to '10'||`` block. 
+Inside the ``||math:Math||`` tab, you will find the ``||math: pick random '0' to '10'||``
 
+Replace the "0" in the ``||grove:4Digit show number||`` with the ``||math: pick random '0' to '10'||`` block
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
@@ -123,8 +114,7 @@ _4Digit.show(0)
 ## Download & Test Program 
 
 Click ``|Download|`` to transfer your code.
-
-When you press the 'A' button, the number will randomly change on the 4-Digit Display
+When you press the 'A' button, the number will randomly change on the 4 Digit Display
 
 ## End of tutorial
 
@@ -137,4 +127,3 @@ Grove=github:seeed-studio/pxt-grove
 ```validation.global
 # BlocksExistValidator
 ```
-
