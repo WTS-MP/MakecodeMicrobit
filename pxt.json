@@ -23,7 +23,16 @@
         "tutorials/grove-servo.md",
         "_locales/en-AU/tutorials/test.md",
         "tutorials/test-servo.md",
-        "tutorials/grove-servom.md"
+        "tutorials/grove-servom.md",
+        "tutorials/counter.md",
+        "tutorials/distance.md",
+        "tutorials/gesture.md",
+        "tutorials/led.md",
+        "tutorials/ledcontrol.md",
+        "tutorials/lightsensor.md",
+        "tutorials/rotary.md",
+        "tutorials/servo.md",
+        "tutorials/speaker.md"
     ],
     "testFiles": [
         "test.ts"
