@@ -10,7 +10,6 @@ Tasks:
 
 -->
 
-
 ### @diffs true
 
 # Servo Motors with Microbit & Grove
@@ -81,8 +80,19 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 
+## {different blocks}
+► Now place a ``||pins: Servo Write Pin [P0] to [180]||`` inside the ``||input:on button [A] pressed||``   
+💡 This will tell the servo motor where to move to
+```blocks
+input.onButtonPressed(Button.A, function () {
+    // @highlight
+    pins.servoWritePin(AnalogPin.P0, 180)
+})
+```
+
+
 ## {More Control}
-► First, make sure the servo returns to 0 each time.. 
+► First, make sure the servo returns to 0 each time. 
 
 ► Add a ``||basic:On Start||`` block. Insert a ``||pins: Servo Write Pin [P0] to [0]||`` 
 
@@ -91,31 +101,6 @@ input.onButtonPressed(Button.A, function () {
  pins.servoWritePin(AnalogPin.P0, 0)
 
 ```
-
-
-## {different blocks}
-► Now place a ``||pins: Servo Write Pin [P0] to [180]||`` inside the ``||input:on button [A] pressed||``   
-💡 This will be tell the servo motor where to move to
-```blocks
-input.onButtonPressed(Button.A, function () {
-    // @highlight
-    pins.servoWritePin(AnalogPin.P0, 180)
-})
-```
-
-## Time to test the movement
-► ``|Download|`` your code to the micro:bit and press the [A] button on the microbit
-
-
-## Testing Single Movement @unplugged
-You should have seen you micro:bit move!  
-💡 If it is not moving, it might already be at position 180 **or** you might need a battery pack
-
-
-## Test different numbers
-► Try changing the value of 180, and test again   
-💡 Don't forget to ``|Download|`` each time to test  
-💡 Only numbers between 0 and 180 will work.
 
 ## {More Control}
 ► Let us get more control with another ``||input:on button [A] pressed||`` on the workspace   
