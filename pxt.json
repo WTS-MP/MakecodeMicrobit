@@ -11,7 +11,8 @@
         "README.md",
         "main.blocks",
         "main.ts",
-        "tutorials/test.md"
+        "tutorials/test.md
+        tutorials/grove-speaker.md"
     ],
     "testFiles": [
         "test.ts"
