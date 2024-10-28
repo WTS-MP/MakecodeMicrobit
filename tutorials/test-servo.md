@@ -1,3 +1,16 @@
+<!--
+Written by:  
+
+Last updated: 06/09
+
+Ready to release: Y
+
+Tasks:
+- recreate spilt cable image for 'Collecting Parts' page 
+
+-->
+
+
 ### @diffs true
 
 # Servo Motors with Microbit & Grove
