@@ -81,6 +81,18 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 
+## {More Control}
+► First, make sure the servo returns to 0 each time. 
+
+► Add a ``||basic:On Start||`` block. Insert a ``||pins: Servo Write Pin [P0] to [0]||`` 
+
+```blocks
+// @highlight
+ pins.servoWritePin(AnalogPin.P0, 0)
+
+```
+
+
 ## {different blocks}
 ► Now place a ``||pins: Servo Write Pin [P0] to [180]||`` inside the ``||input:on button [A] pressed||``   
 💡 This will be tell the servo motor where to move to
