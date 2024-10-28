@@ -65,10 +65,6 @@ input.onButtonPressed(Button.A, function () {
 	
 })
 ```
-```validation.local
-# BlocksExistValidator
-* Enabled: false
-```
 
 ## {Coding Time}
 ► From the ``||input:Input||`` category in your toolbox, find the ``||input:on button [A] pressed||`` and add it to your workspace.  
@@ -99,7 +95,6 @@ input.onButtonPressed(Button.A, function () {
 ```blocks
 // @highlight
  pins.servoWritePin(AnalogPin.P0, 0)
-
 ```
 
 ## {More Control}
