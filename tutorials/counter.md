@@ -1,3 +1,17 @@
+<!--
+Written by: casey 
+
+Last updated: 26/11
+
+Ready for Upload: Y
+
+Image Update: Complete 
+
+Tasks:
+- P0 Changed to P1 - update imagine
+
+-->
+
 ### @diffs true
 
 # 4-Digit Display with Microbit
@@ -5,7 +19,7 @@
 ## {Introduction @unplugged}
 Let's count using @boardname@, Grove and a 4-Digit Display!
 
-![WTS Logo](https://raw.githubusercontent.com/CarlTS/microbit-grove/master/assets/WTSLogo.png)
+![WTS Logo](https://raw.githubusercontent.com/WTS-MP/MakecodeMicrobit/refs/heads/master/assets/WTSLogo.png)
 
   - :lightbulb: **Helpful Hints**   
   Look out for hints indicated by a light bulb   
@@ -14,7 +28,7 @@ You can click the ``||game: OK ➔ ||`` or ``| ➔ Next |`` button on the right 
 ## Testing the micro:bit @unplugged
 We want to make sure everything is working correctly before we start.
 
-![Plugging in microbit](https://raw.githubusercontent.com/CarlTS/microbit-grove/master/assets/microbitplugin.gif)   
+![Plugging in microbit](https://raw.githubusercontent.com/WTS-MP/MakecodeMicrobit/refs/heads/master/assets/microbitplugin.gif)   
 
 ## {Testing the micro:bit}
 We'll begin by testing our microbit   
@@ -36,12 +50,12 @@ basic.showLeds(`
 
 For this tutorial you will need;
 
-![Parts Needed: 1 4-digitDisplay, 1 microbit, 1 sheild](https://raw.githubusercontent.com/CarlTS/grove-sensor-tutorial/master/images/GroveSensors/4DigitDisplay.png)
+![Parts Needed: 1 4-digitDisplay, 1 microbit, 1 sheild](https://raw.githubusercontent.com/WTS-MP/MakecodeMicrobit/refs/heads/master/assets/GroveSensors/4DigitDisplay.png)
 
 ## Connecting Everything @fullscreen @unplugged 
 1. Plug the Microbit ** ( 3 ) ** into the Shield ** ( 2 ) **
-2. Plug the 4-Digit Display ** ( 1 ) ** into the P0/P14 pin
-![Connection Image](https://raw.githubusercontent.com/CarlTS/grove-sensor-tutorial/master/images/4digitdisplaysetup.jpg)
+2. Plug the 4-Digit Display ** ( 1 ) ** into the P1/P15 pin
+![Connection Image](https://raw.githubusercontent.com/WTS-MP/MakecodeMicrobit/refs/heads/master/assets/GroveSensors/4digitdisplaysetup.jpg)
 
 ## Time to Code! @unplugged
 
@@ -49,20 +63,20 @@ First, we want to program the 4-Digit Display to show an ** initial value**!
 
 ```blocks
 let _4Digit: grove.TM1637 = null
-_4Digit = grove.createDisplay(DigitalPin.P0, DigitalPin.P14)
+_4Digit = grove.createDisplay(DigitalPin.P1, DigitalPin.P15)
 _4Digit.show(0)
 ```
 ```validation.local
 # BlocksExistValidator
-* Enabled: true
+* Enabled: false
 ```
 
 ## Setup the 4-Digit Display
-Place a ``||grove:Set 4Digit to Display||`` block inside a ``||basic:On Start||``. Set the pins to ``||grove:P0||`` and ``||grove:P14||``
+Place a ``||grove:Set 4Digit to Display||`` block inside a ``||basic:On Start||``. Set the pins to ``||grove:P1||`` and ``||grove:P15||``
 
 ```blocks
 // @highlight
-let _4Digit = grove.createDisplay(DigitalPin.P0, DigitalPin.P14)
+let _4Digit = grove.createDisplay(DigitalPin.P1, DigitalPin.P15)
 
 ```
 
@@ -73,7 +87,7 @@ This means the display will initially show "0". Remember to ``|Download|``
 
 ```blocks
 let _4Digit: grove.TM1637 = null
-_4Digit = grove.createDisplay(DigitalPin.P0, DigitalPin.P14)
+_4Digit = grove.createDisplay(DigitalPin.P1, DigitalPin.P15)
 // @highlight
 _4Digit.show(0)
 ```
@@ -91,7 +105,7 @@ This prepares the display for a random number generator in the next step
     })
     
     let _4Digit: grove.TM1637 = null
-    _4Digit = grove.createDisplay(DigitalPin.P0, DigitalPin.P14)
+    _4Digit = grove.createDisplay(DigitalPin.P1, DigitalPin.P15)
     _4Digit.show(0)
 ```
 
@@ -106,7 +120,7 @@ input.onButtonPressed(Button.A, function () {
     _4Digit.show(randint(0, 10))
 })
 let _4Digit: grove.TM1637 = null
-_4Digit = grove.createDisplay(DigitalPin.P0, DigitalPin.P14)
+_4Digit = grove.createDisplay(DigitalPin.P1, DigitalPin.P15)
 _4Digit.show(0)
 ```
 
@@ -127,3 +141,4 @@ Grove=github:seeed-studio/pxt-grove
 ```validation.global
 # BlocksExistValidator
 ```
+
