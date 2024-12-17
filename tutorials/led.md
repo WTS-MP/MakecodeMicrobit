@@ -7,7 +7,6 @@ Image Update: Complete
 
 tasks:
 -change tutorial name to grove-ledstrip 
-
 -->
 
 ### @diffs true
