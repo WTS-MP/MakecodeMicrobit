@@ -1,10 +1,12 @@
 <!--
 written by:  
 
-last updated: 16/08
+last updated: 26/11
+
+Image Update: Complete 
 
 tasks:
-change tutorial name to grove-ledstrip 
+-change tutorial name to grove-ledstrip 
 
 -->
 
@@ -22,7 +24,7 @@ basic.showLeds(`
 ```
 ## {Introduction @unplugged}
 Let's create light using @boardname@ , Grove and LED Strips!
-![WTS Logo](https://raw.githubusercontent.com/CarlTS/microbit-grove/master/assets/WTSLogo.png)
+![WTS Logo](https://raw.githubusercontent.com/WTS-MP/MakecodeMicrobit/refs/heads/master/assets/WTSLogo.png)
 
   - :lightbulb: **Helpful Hints**   
   Look out for hints indicated by a light bulb   
@@ -30,7 +32,7 @@ You can click the ``||game: OK ➔ ||`` or ``| ➔ Next |`` button on the right 
 
 ## Testing the micro:bit @unplugged
 We want to make sure everything is working correctly before we start.
-![Plugging in microbit](https://raw.githubusercontent.com/CarlTS/microbit-grove/master/assets/microbitplugin.gif)   
+![Plugging in microbit](https://raw.githubusercontent.com/WTS-MP/MakecodeMicrobit/refs/heads/master/assets/microbitplugin.gif)   
 
 ## {Testing the micro:bit}
 We'll begin by testing our microbit   
@@ -50,11 +52,11 @@ basic.showLeds(`
 
 ## Collecting Parts @unplugged @fullscreen
 Let's collect all the parts needed for this tutorial   
-![GroveShield,Servo,Microbit,Cable](https://raw.githubusercontent.com/CarlTS/microbit-grove/master/assets/LED-neopixel-strip.png)
+![GroveShield,Servo,Microbit,Cable](https://raw.githubusercontent.com/WTS-MP/MakecodeMicrobit/refs/heads/master/assets/GroveSensors/LED-neopixel-strip.png)
 
 ## Connecting Everything @unplugged
 Connect the parts together.
-![LED Strip to Grove in P0/P14, microbit into the Grove Shield](https://raw.githubusercontent.com/CarlTS/microbit-grove/master/assets/LED-neopixel-connect.png)
+![LED Strip to Grove in P0/P14, microbit into the Grove Shield](https://raw.githubusercontent.com/WTS-MP/MakecodeMicrobit/refs/heads/master/assets/GroveSensors/LED-neopixel-connect.png)
 
 ## Time to Code @unplugged
 We will need to set up the LED Strip to use it correctly.
