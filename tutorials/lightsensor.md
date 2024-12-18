@@ -1,13 +1,18 @@
 <!--
 Written by: casey 
 
-Last updated: 16/08
+Last updated: 26/11
 
 Ready for Upload: Y
 
+Image Update: Complete 
+Issue with last image, see line 64
+
 Tasks:
 - add picture of microbit graph to 'time to code!'
+
 - validation issue with pin block 'analog read pin (P0), "Detect & Graph the Light Level" step not validated
+ 
 -->
 
 ### @diffs true
@@ -16,7 +21,7 @@ Tasks:
 
 ## {Introduction @unplugged}
 Let's plot the level of light using @boardname@ and a Grove Light Sensor!
-![WTS Logo](https://raw.githubusercontent.com/CarlTS/microbit-grove/master/assets/WTSLogo.png)
+![WTS Logo](https://raw.githubusercontent.com/WTS-MP/MakecodeMicrobit/refs/heads/master/assets/WTSLogo.png)
 
   - :lightbulb: **Helpful Hints**   
   Look out for hints indicated by a light bulb   
@@ -25,7 +30,7 @@ You can click the ``||game: OK ➔ ||`` or ``| ➔ Next |`` button on the right 
 ## Testing the micro:bit @unplugged
 We want to make sure everything is working correctly before we start.
 
-![Plugging in microbit](https://raw.githubusercontent.com/CarlTS/microbit-grove/master/assets/microbitplugin.gif)   
+![Plugging in microbit](https://raw.githubusercontent.com/WTS-MP/MakecodeMicrobit/refs/heads/master/assets/microbitplugin.gif)   
 
 ## {Testing the micro:bit}
 We'll begin by testing our microbit   
@@ -48,14 +53,17 @@ basic.showLeds(`
 
 For this tutorial you will need;
 
-![Parts Needed:1x Grove Light Sensor, 1x Grove Shield, 1x micro:bit](https://raw.githubusercontent.com/CarlTS/grove-sensor-tutorial/master/images/GroveSensors/GroveLightSensor-parts.png)
+![Parts Needed:1x Grove Light Sensor, 1x Grove Shield, 1x micro:bit](https://raw.githubusercontent.com/WTS-MP/MakecodeMicrobit/refs/heads/master/assets/GroveSensors/GroveLightSensor-parts.png)
 
 
 ## Connecting Everything  @fullscreen @unplugged
 1. Plug the Microbit ** ( 3 ) ** into the Shield ** ( 2 ) **
-2. Plug the LED ** ( 1 ) ** into the P0/P14 pin.
+2. Plug the Grove Light Sensor** ( 1 ) ** into the P0/P14 pin.
 
-![image](https://raw.githubusercontent.com/CarlTS/grove-sensor-tutorial/master/images/lightsensor.jpg)
+![image](https://raw.githubusercontent.com/WTS-MP/MakecodeMicrobit/refs/heads/master/assets/GroveSensors/lightsensor.jpg)
+
+
+<!-- the image above is the same as led control image  -->
 
 ## Time to Code @unplugged
 

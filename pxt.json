@@ -22,7 +22,8 @@
         "tutorials/lightsensor.md",
         "tutorials/rotary.md",
         "tutorials/servo.md",
-        "tutorials/speaker.md"
+        "tutorials/speaker.md",
+        "tutorials/waterpump.md"
     ],
     "testFiles": [
         "test.ts"

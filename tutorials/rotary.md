@@ -1,12 +1,15 @@
 <!--
 Written by: casey 
 
-Last updated: 16/08
+Last updated: 26/11
 
-Ready to release: Y
+Ready for Upload: Y
+
+Image Update completed (future task: create new images)
 
 Tasks:
-add photo image of microbit display to 'time to code'
+- add photo image of microbit display to 'time to code'
+
 -->
 
 
@@ -16,7 +19,7 @@ add photo image of microbit display to 'time to code'
 
 ## {Introduction @unplugged}
 Let's plot rotary angles using @boardname@ and a Rotary Angle Sensor!
-![WTS Logo](https://raw.githubusercontent.com/CarlTS/microbit-grove/master/assets/WTSLogo.png)
+![WTS Logo](https://raw.githubusercontent.com/WTS-MP/MakecodeMicrobit/refs/heads/master/assets/WTSLogo.png)
 
   - :lightbulb: **Helpful Hints**   
   Look out for hints indicated by a light bulb   
@@ -25,7 +28,7 @@ You can click the ``||game: OK ➔ ||`` or ``| ➔ Next |`` button on the right 
 ## Testing the micro:bit @unplugged
 We want to make sure everything is working correctly before we start.
 
-![Plugging in microbit](https://raw.githubusercontent.com/CarlTS/microbit-grove/master/assets/microbitplugin.gif)   
+![Plugging in microbit](https://raw.githubusercontent.com/WTS-MP/MakecodeMicrobit/refs/heads/master/assets/microbitplugin.gif)   
 
 ## {Testing the micro:bit}
 We'll begin by testing our microbit   
@@ -48,14 +51,14 @@ basic.showLeds(`
 
 For this tutorial you will need;
 
-![Parts Needed 1 Rotary, 1 microbit, 1 sheild](https://raw.githubusercontent.com/CarlTS/grove-sensor-tutorial/master/images/GroveSensors/GroveRotary.png)
+![Parts Needed 1 Rotary, 1 microbit, 1 sheild](https://raw.githubusercontent.com/WTS-MP/MakecodeMicrobit/refs/heads/master/assets/GroveSensors/GroveRotary.png)
 
 
 ## Connecting Everything  @fullscreen @unplugged
 1. Plug the Microbit ** ( 3 ) ** into the Shield ** ( 2 ) **
-2. Plug the LED ** ( 1 ) ** into the P0/P14 pin.
+2. Plug the Rotary Encoder ** ( 1 ) ** into the P0/P14 pin.
 
-![Connection Image](https://raw.githubusercontent.com/CarlTS/grove-sensor-tutorial/master/images/rotaryAnglesensor.jpg)
+![Connection Image](https://raw.githubusercontent.com/WTS-MP/MakecodeMicrobit/refs/heads/master/assets/GroveSensors/rotaryAnglesensor.jpg)
 
 ## Time to Code @unplugged
 
@@ -79,7 +82,7 @@ basic.forever(function () {
 
 ##  Connect the Rotary Potentiometer to the Micro:bit
 -------------------------------
-Place a ``||pins:analog read||`` into the ``||led:plot bar graph of||`` field
+Place a ``||pins:analog read||`` after the writing``||led:plot bar graph of||``
 
 ```blocks
 // @highlight

@@ -1,11 +1,11 @@
 <!--
 written by: casey 
 
-last updated: 16/08
+last updated: 26/11
 
 Ready for Upload: Y
 
-
+Image Update: Complete
 -->
 
 ### @diffs true
@@ -14,7 +14,7 @@ Ready for Upload: Y
 
 ## {Introduction @unplugged}
 Let's play music using @boardname@ and an external Speaker!
-![WTS Logo](https://raw.githubusercontent.com/CarlTS/microbit-grove/master/assets/WTSLogo.png)
+![WTS Logo](https://raw.githubusercontent.com/WTS-MP/MakecodeMicrobit/refs/heads/master/assets/WTSLogo.png)
 
   - :lightbulb: **Helpful Hints**   
   Look out for hints indicated by a light bulb   
@@ -23,7 +23,7 @@ You can click the ``||game: OK ➔ ||`` or ``| ➔ Next |`` button on the right 
 ## Testing the micro:bit @unplugged
 We want to make sure everything is working correctly before we start.
 
-![Plugging in microbit](https://raw.githubusercontent.com/CarlTS/microbit-grove/master/assets/microbitplugin.gif)   
+![Plugging in microbit](https://raw.githubusercontent.com/WTS-MP/MakecodeMicrobit/refs/heads/master/assets/microbitplugin.gif)   
 
 ## {Testing the micro:bit}
 We'll begin by testing our microbit   
@@ -46,15 +46,15 @@ basic.showLeds(`
 
 For this tutorial you will need;
 
-![Parts Needed: 1 Speaker, 1 microbit, 1 sheild](https://raw.githubusercontent.com/CarlTS/grove-sensor-tutorial/master/images/GroveSpeaker.png)
+![Parts Needed: 1 Speaker, 1 microbit, 1 sheild](https://raw.githubusercontent.com/WTS-MP/MakecodeMicrobit/refs/heads/master/assets/GroveSensors/GroveSpeaker.png)
 
 
 ## Physical Connection @fullscreen @unplugged
 
 1. Plug the Microbit ** ( 3 ) ** into the Shield ** ( 2 ) **
-2. Plug the LED ** ( 1 ) ** into the P0/P14 pin.
+2. Plug the Grove Speaker ** ( 1 ) ** into the P0/P14 pin.
 
-![Connection Image](https://raw.githubusercontent.com/CarlTS/grove-sensor-tutorial/master/images/speaker.jpg)
+![Connection Image](https://raw.githubusercontent.com/WTS-MP/MakecodeMicrobit/refs/heads/master/assets/GroveSensors/speaker.jpg)
 
 ## Playing Tones
 Place a ``||input:on button A pressed||`` block and insert a ``||music:play tone 'middle C' for '1 beat'||`` block. 

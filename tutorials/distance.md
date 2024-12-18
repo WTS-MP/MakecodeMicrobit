@@ -1,12 +1,16 @@
 <!-- 
 Written by: casey
 
-last updated: 16/08
+last updated: 26/11
 
 Ready for Upload: Y
 
-tasks:
-potentially spilt into two seperate sections, display and sensor, with second connection image and page later on
+Image Update: Complete 
+
+Tasks:
+
+- potentially spilt into two seperate sections, display and sensor, with second connection image and page later on
+
 
 -->
 
@@ -26,7 +30,7 @@ basic.showLeds(`
 
 ## {Introduction @unplugged}
 Let's detect distance using @boardname@ , Grove and an Ultrasonic Distance Sensor!
-![WTS Logo](https://raw.githubusercontent.com/CarlTS/microbit-grove/master/assets/WTSLogo.png)
+![WTS Logo](https://raw.githubusercontent.com/WTS-MP/MakecodeMicrobit/refs/heads/master/assets/WTSLogo.png)
 
   - :lightbulb: **Helpful Hints**   
   Look out for hints indicated by a light bulb   
@@ -37,7 +41,7 @@ You can click the ``||game: OK ➔ ||`` or ``| ➔ Next |`` button on the right 
 ## Testing the micro:bit @unplugged
 We want to make sure everything is working correctly before we start.
 
-![Plugging in microbit](https://raw.githubusercontent.com/CarlTS/microbit-grove/master/assets/microbitplugin.gif)   
+![Plugging in microbit](https://raw.githubusercontent.com/WTS-MP/MakecodeMicrobit/refs/heads/master/assets/microbitplugin.gif)   
 
 ## {Testing the micro:bit}
 We'll begin by testing our microbit   
@@ -49,7 +53,7 @@ We'll begin by testing our microbit
 ## Collecting Parts @unplugged @fullscreen
 Lets collect all the parts needed for this tutorial
 
-![Parts Needed: 1 ultrasonic sensor, 1 4-digitDisplay, 1 microbit, 1 sheild](https://raw.githubusercontent.com/CarlTS/grove-sensor-tutorial/master/images/GroveSensors/Ultrasonic%20Sensor.png)
+![Parts Needed: 1 ultrasonic sensor, 1 4-digitDisplay, 1 microbit, 1 sheild](https://raw.githubusercontent.com/WTS-MP/MakecodeMicrobit/refs/heads/master/assets/GroveSensors/Ultrasonic%20Sensor.png)
 
 
 ## Connecting Everything @unplugged
@@ -59,7 +63,7 @@ Lets collect all the parts needed for this tutorial
 (we won't use this until later in the tutorial)
 3. Plug the 4-Digit Display ** ( 2 ) ** into the P1/P15 pin 
 
-![Connection Image](https://raw.githubusercontent.com/CarlTS/grove-sensor-tutorial/master/images/ultrasonicDisplay.jpg)
+![Connection Image](https://raw.githubusercontent.com/WTS-MP/MakecodeMicrobit/refs/heads/master/assets/GroveSensors/ultrasonicDisplay.jpg)
 
 ## Time to Code! @unplugged
 
@@ -108,7 +112,7 @@ Place a ``||basic:Forever||`` block and insert a ``||grove:4Digit show number||`
 
 ```blocks
 let _4Digit: grove.TM1637 = null
-_4Digit = grove.createDisplay(DigitalPin.P0, DigitalPin.P14)
+_4Digit = grove.createDisplay(DigitalPin.P1, DigitalPin.P15)
 _4Digit.show(0)
 // @highlight
 basic.forever(function () {
@@ -125,7 +129,7 @@ Replace the "0" in the ``||grove:4Digit show number||`` with a ``||grove:(V2)Ult
 
 ```blocks
 let _4Digit: grove.TM1637 = null
-_4Digit = grove.createDisplay(DigitalPin.P0, DigitalPin.P14)
+_4Digit = grove.createDisplay(DigitalPin.P1, DigitalPin.P15)
 _4Digit.show(0)
 basic.forever(function () {
     _4Digit.show

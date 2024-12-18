@@ -1,9 +1,12 @@
 <!--
 Written by:  
 
-Last updated: 06/09
+Last updated: 26/11
 
-Ready to release: Y
+Ready for Upload: Y
+
+Image Update: Complete 
+(future task: create new images)
 
 Tasks:
 - recreate spilt cable image for 'Collecting Parts' page 
@@ -24,7 +27,7 @@ basic.showLeds(`
 ```
 ## {Introduction @unplugged}
 Let's create movement using @boardname@ , Grove and Servo Motors!
-![WTS Logo](https://raw.githubusercontent.com/CarlTS/microbit-grove/master/assets/WTSLogo.png)
+![WTS Logo](https://raw.githubusercontent.com/WTS-MP/MakecodeMicrobit/refs/heads/master/assets/WTSLogo.png)
 
   - :lightbulb: **Helpful Hints**   
   Look out for hints indicated by a light bulb   
@@ -32,7 +35,7 @@ You can click the ``||game: OK ➔ ||`` or ``| ➔ Next |`` button on the right 
 
 ## Testing the micro:bit @unplugged
 We want to make sure everything is working correctly before we start.
-![Plugging in microbit](https://raw.githubusercontent.com/CarlTS/microbit-grove/master/assets/microbitplugin.gif)   
+![Plugging in microbit](https://raw.githubusercontent.com/WTS-MP/MakecodeMicrobit/refs/heads/master/assets/microbitplugin.gif)   
 
 ## {Testing the micro:bit}
 We'll begin by testing our microbit   
@@ -52,11 +55,11 @@ basic.showLeds(`
 
 ## Collecting Parts @unplugged @fullscreen
 Lets collect all the parts needed for this tutorial
-![GroveShield,Servo,Microbit,Cable](https://raw.githubusercontent.com/CarlTS/grove-sensor-tutorial/master/images/GroveSensors/ServoMotor.png)
+![GroveShield,Servo,Microbit,Cable](https://raw.githubusercontent.com/WTS-MP/MakecodeMicrobit/refs/heads/master/assets/GroveSensors/ServoMotor.png)
 
 ## Connecting Everything @unplugged
 Connect the parts together.
-![Servo to Grove in P0/P14, microbit into the Grove Shield](https://raw.githubusercontent.com/CarlTS/grove-sensor-tutorial/master/images/GroveServoAssembled.png)
+![Servo to Grove in P0/P14, microbit into the Grove Shield](https://raw.githubusercontent.com/WTS-MP/MakecodeMicrobit/refs/heads/master/assets/GroveSensors/GroveServoAssembled.png)
 
 ## Time to Code @unplugged
 In the next step, you will need to use ``||input:on button [A] pressed||``
@@ -82,7 +85,7 @@ input.onButtonPressed(Button.A, function () {
 
 ## {different blocks}
 ► Now place a ``||pins: Servo Write Pin [P0] to [180]||`` inside the ``||input:on button [A] pressed||``   
-💡 This will tell the servo motor where to move to
+💡 This will tell the servo motor where to move
 ```blocks
 input.onButtonPressed(Button.A, function () {
     // @highlight
@@ -134,8 +137,8 @@ input.onButtonPressed(Button.B, function () {
 ## {Download to micro:bit}
 ► Time to test the movement   
 ► ``|Download|`` your code to the micro:bit   
-► Press the [A] button on the microbit and it should go to position 180   
-► Pressing [B] should go to position 90
+► Press the ``||input:[A]||``  button on the microbit and it should go to position 180   
+► Pressing ``||input:[B]||`` should go to position 90
  
 ## Congratulations @unplugged
 You have learnt how to control a servo motor that could be added to your own project.   
@@ -147,18 +150,18 @@ Now try the challenges on the following pages
 
 ## Complete Control Challenge
 Try coding your microbit so that:   
-► Pressing A goes to 20 degrees   
-► Pressing B goes to 160 degrees   
-► Pressing A and B goes to 90 degrees
+► Pressing ``||input:[A]||``  goes to 20 degrees   
+► Pressing ``||input:[B]||``  goes to 160 degrees   
+► Pressing ``||input:[A]||`` and ``||input:[B]||`` goes to 90 degrees
 
 ## Show Feedback Challenge
 Try coding your microbit so that:   
-► Pressing A moves the servo and shows a left arrow on the screen   
-► Pressing B Shows a right arrow and moves the servo on the screen   
+► Pressing ``||input:[A]||`` moves the servo and shows a left arrow on the screen   
+► Pressing ``||input:[B]||`` Shows a right arrow and moves the servo on the screen   
 
 ## Shake Trigger Challenge
 ► When shaking the microbit (Not the servo motor) it moves the Servo   
-► Pressing A - resets the servo position   
+► Pressing ``||input:[A]||`` - resets the servo position   
 
 
 ```blocks
